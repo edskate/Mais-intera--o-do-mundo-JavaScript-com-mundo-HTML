@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <button>A próxima melhoria que faremos em nosso programa implica em fazermos com que o campo de texto seja esvaziado quando o usuário errar uma tentativa. <br> Para isso, após a função verifica(), declararemos que o input.value receberá uma string em branco:</button>
+<br>
+    <input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+    var segredo = 5;
+
+    var input = document.querySelector("input");
+
+    function verifica() {
+
+        if(input.value == segredo) {
+
+        alert("Você ACERTOU!");
+        } else {
+
+        alert("Você ERROU!!!!!!!!");
+        }
+
+                input.value = "";
+
+    }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+</script>
+<button>Da mesma forma como conseguimos pegar o <input> do mundo HTML, também conseguimos lhe conferir um valor a partir do JavaScript. Salvaremos o programa e recarregaremos a página. Inseriremos 4 e clicaremos no botão, e surgirá um pop up informando que o número está incorreto. Ao clicarmos no botão Ok", veremos que o campo para digitação de texto foi limpo.
+
+    Em seguida, daremos um foco no campo de texto sempre que o usuário errar o número utilizando a função input.focus():</button>
+</body>
+</html>
