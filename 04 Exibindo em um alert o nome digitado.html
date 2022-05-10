@@ -1,0 +1,28 @@
+
+        <meta charset="UTF-8">
+<h1>04
+    Exibindo em um alert o nome digitado</h1>
+    <br>
+        <button>Emanuelle estava ajudando seus colegas a se prepararem para a próxima prova de lógica de programação. <br> Eles pediram para que ela resolvesse a seguinte questão que era certo que cairia na prova: "ler do mundo HTML um texto digitado pelo usuário e no clique de um botão exibir o que foi digitado".
+
+            Ela começou pela estrutura mínima de todo o programa:</button>
+      
+            <meta charset="UTF-8">
+
+            <input/>
+            <button>Exibir texto digitado</button>
+            
+            <script>
+                var input = document.querySelector("input");
+            
+                function exibeTexto() {
+            
+                    alert(input.value);
+                }
+            
+                var button = document.querySelector("button");
+                button.onclick = exibeTexto;
+            </script>
+<button>Quando a função exibeTexto for chamada, ela passará como parâmetro da função alert o valor input.value. Não podemos passar simplesmente input, porque o input corresponde a TAG e queremos dessa TAG seu valor (value). Por isso passamos input.value.</button>
+</body>
+</html>
