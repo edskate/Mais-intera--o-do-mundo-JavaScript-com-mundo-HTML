@@ -1,0 +1,76 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+
+    var segredo1 = 5;
+        var segredo2 = 6;
+        var segredo3 = 7;
+
+    var segredo = Math.round(Math.random() * 10);
+
+    var input = document.querySelector("input");
+        input.focus();
+
+    function verifica() {
+
+                if(input.value == segredo1) {
+
+        alert("Você ACERTOU!");
+        } else {
+
+        alert("Você ERROU!!!!!!!!");
+        }
+
+                if(input.value == segredo2) {
+
+        alert("Você ACERTOU!");
+        } else {
+
+        alert("Você ERROU!!!!!!!!");
+        }
+
+                if(input.value == segredo3) {
+
+        alert("Você ACERTOU!");
+        } else {
+
+        alert("Você ERROU!!!!!!!!");
+        }
+
+                input.value = "";
+                input.focus();
+
+    }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+</script>
+<br>
+<button>Faremos com que a variável segredo não guarde somente um valor, mas uma lista com diversos números. Não podemos fazer isso da seguinte forma:</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Temos portanto três segredos, e queremos testar se o palpite do usuário, inserido no campo de texto, é igual ao segredo1, segredo2 ou segredo3. Poderíamos fazer isto copiando a fórmula que já criamos e a utilizando para cada uma das variáveis, da seguinte forma:
