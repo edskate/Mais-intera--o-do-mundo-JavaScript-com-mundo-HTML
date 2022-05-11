@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+ 
+
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+
+    var segredo1 = 5;
+    var segredo2 = 6;
+    var segredo3 = 7;
+
+    var segredo = Math.round(Math.random() * 10);
+
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verifica() {
+
+        if(input.value == segredo) {
+            alert("Você ACERTOU!");
+        } else {
+            alert("Você ERROU!!!!!!!!");
+        }
+
+        input.value = "";
+        input.focus();
+    }
+
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+</script>
+
+Armazenando muitos dados</title>
+
+<h1>01
+    Armazenando muitos dados</h1>
+
+    <button>
+    Continuaremos a trabalhar com o programa advinha_mais.html, como na aula anterior. <br> Nosso programa faz uma comparação entre aquilo que o usuário digita no campo de input e o segredo estabelecido em nosso código. <br> Ao rodar, ele processa uma série de instruções:</button>
+<ul>
+<ol>
+    <li>Em primeiro lugar, ele gera um número aleatório dentro da variável segredo;</li>
+    <li>Em seguida, ele busca o input do mundo HTML para o JavaScript, fazendo com que o campo de texto ganhe foco, em razão do input.focus();</li>
+    <li>Posteriormente, declaramos a função verifica(), a qual recebe o valor digitado pelo usuário no input e o compara com o segredo.</li>
+    <li>Se correto, é exibido o alerta "Você acertou", caso contrário, surge um alerta com a mensagem "Você errou!";</li>
+    <li>Acertando ou errando, o campo de texto é limpo sempre que um número é digitado, e é exibido um pop up. Além disso, este campo limpo também ganha foco;</li>
+    <li> e
+        Como queremos que a função seja executada somente ao clique do botão, criamos uma variável button, que busca esta funcionalidade do mundo HTML, e a associamos ao clique, por meio de onclick.</li>
+        <li>Nossa intenção agora é aumentar as chances de acerto para o usuário. Criaremos uma série de variáveis, cada uma contendo um valor de segredo diferente:</li>
+</ol>
+</ul>
+
