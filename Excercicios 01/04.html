@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+
+    var segredos = [];
+
+    var input = document.querySelector("input");
+        input.focus();
+
+    function verifica() {
+
+        if(input.value == segredo) {
+
+        alert("Você ACERTOU!");
+        } else {
+
+        alert("Você ERROU!!!!!!!!");
+        }
+
+                input.value = "";
+                input.focus();
+
+    }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+</script>
+<br>
+<h1>Se a variável conterá vários segredos, temos como boa prática de programação colocar seu nome no plural, portanto, de var segredo passaremos para var segredos:</h1>
